@@ -47,5 +47,13 @@ class MTest{
 
     }
 
+    /*
+    * B. Explain what will happen after lines 40 and 41 are executed in terms of garbage collection. Keep your answer short and precise.
+
+     After lines 40 and 41 are executed, the objects that were previously referenced by e1 and e2 will be eligible for garbage collection.
+     After e1 = new Exam(); and e2 = new Exam(); are executed, new Exam objects are created and assigned to e1 and e2. The previous objects that were referenced by e1 and e2 are no longer reachable, and they become eligible for garbage collection. The Java garbage collector will eventually reclaim the memory occupied by the old Exam objects, freeing up resources.
+
+    * */
+
 
 }
