@@ -6,6 +6,7 @@
         this.arr = arr;
     }
 
+    // The run method is the entry point for the thread
     public void run() {
         for (int num : arr) {
             max = Math.max(max, num);
@@ -27,16 +28,19 @@
         MaxFinder finder3 = new MaxFinder(arr3);
         MaxFinder finder4 = new MaxFinder(arr4);
 
+        // Start the threads
         finder1.start();
         finder2.start();
         finder3.start();
         finder4.start();
 
+        // Wait for the threads to finish
         finder1.join();
         finder2.join();
         finder3.join();
         finder4.join();
 
+        // Find the maximum number among the four threads
         int max = Math.max(Math.max(finder1.getMax(), finder2.getMax()), Math.max(finder3.getMax(), finder4.getMax()));
 
         System.out.println("The maximum number is " + max);
