@@ -33,8 +33,8 @@ public class Question_3_a extends JFrame implements ActionListener {
             newButton.setBounds(50, 100, 95, 30);
             add(newButton);
             count++;
-            revalidate();
-            repaint();
+            revalidate(); // to refresh the frame
+            repaint(); // to ensure the changes are visible
 
         }
     }
