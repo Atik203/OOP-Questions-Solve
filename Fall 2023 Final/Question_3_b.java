@@ -84,8 +84,8 @@ public class Question_3_b extends JFrame implements ActionListener {
             res.setText(String.valueOf(min));
         }
         else if (e.getSource() == avg) {
-            int avg = (a + b + c) / 3;
-            res.setText(String.valueOf(avg));
+            double avg = (a + b + c) / 3.0;
+            res.setText(String.format("%.2f", avg));
         }
         else if (e.getSource() == clr) {
             n1.setText("");
