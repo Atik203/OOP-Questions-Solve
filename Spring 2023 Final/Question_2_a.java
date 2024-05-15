@@ -1,5 +1,5 @@
 
-class Math {
+class Math1 {
     public int divide(int a, int b) {
         return a / b;
     }
@@ -7,7 +7,7 @@ class Math {
 
  class test {
     public static void main(String[] args) {
-        Math m = new Math();
+        Math1 m = new Math1();
         int n = 4;
         int d = 0;
 
