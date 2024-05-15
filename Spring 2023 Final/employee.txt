@@ -1,0 +1,6 @@
+Employee 1: Atik
+Employee 1: 5
+Employee 1: 80.833333333333336
+Employee 2: Rahim
+Employee 2: 7
+Employee 2: 52.5

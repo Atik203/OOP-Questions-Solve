@@ -1,4 +1,4 @@
-class Math {
+class Math2 {
     public int divide(int a, int b) throws DivbyZero {
         if (b == 0) {
             throw new DivbyZero("The denominator cannot be zero");
@@ -18,7 +18,7 @@ class DivbyZero extends ArithmeticException {
 
 class Test2 {
     public static void main(String[] args) {
-        Math m = new Math();
+        Math2 m = new Math2();
         int n = 4;
         int d = 0;
 
