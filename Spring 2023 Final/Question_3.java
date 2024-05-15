@@ -52,12 +52,12 @@ class Employee{
         FileReader fr = new FileReader("employee.txt");
         PrintWriter w1 = new PrintWriter("increment.txt");
 
-        Scanner sc = new Scanner(fr);
+        Scanner sc1 = new Scanner(fr);
 
         double maxScore = Double.MIN_VALUE;
         String maxScoreName = "";
 
-        while(sc.hasNextLine()){
+        while(sc1.hasNextLine()){
             String nameLine = sc.nextLine();
             String idLine = sc.nextLine();
             String AvgPerformanceLine = sc.nextLine();
